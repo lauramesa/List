@@ -1,0 +1,15 @@
+# Escriba un programavque que tenga dos listas y que, a continuacion, creelas siguientes listas(en las que no debe haber repeticiones)
+#   Lista de palabras que aparecen en las dos listas
+#   Lista de palabras que aparecenen la primera, pero no en la segunda
+#   Lista de palabras que aparecen la segunda, pero no en la primera
+
+lista_1 = [1,3,"software",8,"BIM","computador", "partantes", 2,3,4,"novel"]
+lista_2 = [2,"computador", "partantes",3,"Presupuesto",4, "Arquietctura",7, "libros" ]
+list1= set(lista_1)
+list2= set(lista_2)
+dife_1= set(lista_1) - set(lista_2)
+dife_2= set(lista_2) - set(lista_1)
+print(f"palabras de la primera lista {list1}")
+print(f"palabras de la segunda lista {list2}")
+print(f"las palabras que aparecenen la primera, pero no en la segunda son: {dife_1}")
+print(f"las palabras que aparecen en la segunda, pero no en la primera son: {dife_2}")
